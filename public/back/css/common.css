@@ -140,3 +140,10 @@ ul {
   height: 400px;
   width: 48%;
 }
+
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  /* 设置单位格内容 垂直对齐方式 */
+  vertical-align: middle;
+}
