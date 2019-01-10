@@ -1,20 +1,19 @@
-/**
- * Created by 54721 on 2019/1/8.
- */
-mui('.mui-scroll-wrapper').scroll({
-  deceleration: 0.0005, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
-  indicators: false //是否显示滚动条
-});
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
 
-//获得slider插件对象
-var gallery = mui('.mui-slider');
-gallery.slider({
-  interval: 3000//自动轮播周期，若为0则不自动播放，默认为0；
-});
+<!--
+  面试题:
+    1. 有一个地址  index.html?name=pp&age=18&desc=帅
+    2. 要求: 获取所有的地址栏参数, 进行处理, 处理成一个对象
+    3. 对象格式: { name: 'pp', age: 18, desc: "帅" }
+-->
+<script>
 
-
-// 封装了一个方法, 专门用于处理获取地址栏的传参
-function getSearch( k ) {
   // 利用 location.search 获取地址栏参数
   var str = location.search;
 
@@ -39,5 +38,12 @@ function getSearch( k ) {
     obj[ key ] = value;
   });
 
-  return obj[ k ];
-}
+  console.log( obj );
+
+
+
+
+</script>
+
+</body>
+</html>
